@@ -3,7 +3,7 @@ Teensyterpreter
 
 A small C-based script for the Teensy to be compiled on the Arduino IDE (for maximum support). The primary function of this script is to open a reverse TCP shell between the victim and attacker in as little time as possible, using as little memory as possible, and bypassing all file-scanning antivirus countermeasures and all tested heuristic antivirus countermeasures.
 
-NOTE: You will need to change line 228 in the script to reflect your own information, i.e. your public IP address and any port of your choice (the port you choose MUST be the same one that you configure Metasploit to listen on and the same one you forward on your router).
+NOTE: You will need to change line 154 in the script to reflect your own information, i.e. your public IP address and any port of your choice (the port you choose MUST be the same one that you configure Metasploit to listen on and the same one you forward on your router).
 
 
 A detailed, typical attack scenario is as follows:
